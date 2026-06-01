@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AsaBranca | Portal</title>
+    <meta
+      name="description"
+      content="Portal de acesso para administra&ccedil;&atilde;o e noivos do AsaBranca Espa&ccedil;o de Eventos."
+    />
+    <meta name="theme-color" content="#111b16" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/optimized/scene-hall-1920.jpg"
+      imagesrcset="assets/optimized/scene-hall-960.jpg 960w, assets/optimized/scene-hall-1920.jpg 1920w"
+      imagesizes="100vw"
+    />
+    <link rel="stylesheet" href="portal.css" />
+  </head>
+  <body>
+    <div class="portal-grain" aria-hidden="true"></div>
+
+    <main class="portal-shell" data-view="login">
+      <section class="access-scene" aria-label="Acesso ao portal">
+        <picture class="access-bg">
+          <source media="(max-width: 720px)" srcset="assets/optimized/scene-hall-960.jpg" />
+          <img
+            src="assets/optimized/scene-hall-1920.jpg"
+            srcset="assets/optimized/scene-hall-960.jpg 960w, assets/optimized/scene-hall-1920.jpg 1920w"
+            sizes="100vw"
+            alt="Sal&atilde;o do AsaBranca iluminado &agrave; noite"
+          />
+        </picture>
+        <div class="access-shade"></div>
+
+        <header class="access-top">
+          <a class="brand" href="index.html" aria-label="Voltar ao site AsaBranca">
+            <span class="brand-symbol" aria-hidden="true">AB</span>
+            <span>
+              <strong>AsaBranca</strong>
+              <small>portal de experi&ecirc;ncia</small>
+            </span>
+          </a>
+          <a class="back-link" href="index.html">Voltar ao site</a>
+        </header>
+
+        <div class="access-content">
+          <section class="access-copy">
+            <p class="kicker">Plataforma exclusiva</p>
+            <h1>O evento inteiro, antes de acontecer.</h1>
+            <p>
+              Um ambiente privado para administrar visitas, acompanhar
+              decis&otilde;es, organizar tarefas e manter os noivos perto de cada
+              detalhe.
+            </p>
+            <div class="access-pills" aria-label="Destaques do portal">
+              <span>agenda viva</span>
+              <span>checklist</span>
+              <span>mensagens</span>
+              <span>documentos</span>
+            </div>
+          </section>
+
+          <section class="login-card" aria-label="Entrar no portal">
+            <div class="login-heading">
+              <p class="kicker">Acesso</p>
+              <h2>Escolha sua entrada</h2>
+            </div>
+
+            <div class="role-switch" role="tablist" aria-label="Tipo de acesso">
+              <button class="role-option is-active" type="button" data-role="couple" role="tab" aria-selected="true">
+                Noivos
+              </button>
+              <button class="role-option" type="button" data-role="admin" role="tab" aria-selected="false">
+                Admin
+              </button>
+            </div>
+
+            <form class="login-form">
+              <label>
+                <span>E-mail</span>
+                <input type="email" name="email" autocomplete="email" value="noivos@asabranca.com" />
+              </label>
+              <label>
+                <span>Senha</span>
+                <input type="password" name="password" autocomplete="current-password" value="asabranca" />
+              </label>
+              <button class="primary-action" type="submit">Entrar no portal</button>
+            </form>
+
+            <button class="demo-access" type="button">Entrar com acesso de demonstra&ccedil;&atilde;o</button>
+
+            <p class="prototype-note">
+              Prot&oacute;tipo visual conectado por dados simulados. Pronto para receber
+              autentica&ccedil;&atilde;o real, banco de dados e permiss&otilde;es.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <section class="app-view" aria-label="Dashboard do portal">
+        <aside class="app-sidebar">
+          <a class="brand dashboard-brand" href="index.html">
+            <span class="brand-symbol" aria-hidden="true">AB</span>
+            <span>
+              <strong>AsaBranca</strong>
+              <small>portal</small>
+            </span>
+          </a>
+
+          <nav class="app-menu" aria-label="Menu do portal">
+            <button class="is-active" type="button" data-section="overview">Vis&atilde;o geral</button>
+            <button type="button" data-section="timeline">Linha do tempo</button>
+            <button type="button" data-section="tasks">Tarefas</button>
+            <button type="button" data-section="messages">Mensagens</button>
+            <button type="button" data-section="documents">Documentos</button>
+          </nav>
+
+          <div class="sidebar-card">
+            <span>Pr&oacute;xima visita</span>
+            <strong>14 jun, 10h30</strong>
+            <p>Jardim + sal&atilde;o decorado</p>
+          </div>
+        </aside>
+
+        <section class="dashboard">
+          <header class="dashboard-top">
+            <div>
+              <p class="kicker dashboard-kicker">Portal AsaBranca</p>
+              <h1 data-dashboard-title>Ol&aacute;, Marina e Lucas.</h1>
+            </div>
+            <div class="dashboard-actions">
+              <button class="ghost-action" type="button">Nova mensagem</button>
+              <button class="logout-action" type="button">Sair</button>
+            </div>
+          </header>
+
+          <div class="role-banner" data-role-banner>
+            <div>
+              <span>Evento em planejamento</span>
+              <strong>Casamento Marina &amp; Lucas</strong>
+            </div>
+            <p>Faltam 118 dias para a cerim&ocirc;nia no jardim.</p>
+          </div>
+
+          <section class="dashboard-section is-active" data-panel="overview">
+            <div class="metric-grid" data-metrics></div>
+            <div class="dashboard-grid">
+              <article class="panel large-panel">
+                <div class="panel-heading">
+                  <span>Hoje</span>
+                  <h2 data-main-panel-title>Decis&otilde;es em andamento</h2>
+                </div>
+                <div class="decision-list" data-decisions></div>
+              </article>
+
+              <article class="panel image-panel">
+                <img src="assets/optimized/scene-ceremony-960.jpg" alt="Cerim&ocirc;nia no jardim" />
+                <div>
+                  <span>Ambiente escolhido</span>
+                  <h2>Jardim das palmeiras</h2>
+                  <p>Cerim&ocirc;nia externa com recep&ccedil;&atilde;o no sal&atilde;o ao entardecer.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="dashboard-section" data-panel="timeline">
+            <article class="panel">
+              <div class="panel-heading">
+                <span>Ritmo do evento</span>
+                <h2>Linha do tempo</h2>
+              </div>
+              <div class="timeline-list" data-timeline></div>
+            </article>
+          </section>
+
+          <section class="dashboard-section" data-panel="tasks">
+            <article class="panel">
+              <div class="panel-heading">
+                <span>Organiza&ccedil;&atilde;o</span>
+                <h2>Checklist inteligente</h2>
+              </div>
+              <div class="task-list" data-tasks></div>
+            </article>
+          </section>
+
+          <section class="dashboard-section" data-panel="messages">
+            <article class="panel">
+              <div class="panel-heading">
+                <span>Conversas</span>
+                <h2>Mensagens recentes</h2>
+              </div>
+              <div class="message-list" data-messages></div>
+            </article>
+          </section>
+
+          <section class="dashboard-section" data-panel="documents">
+            <article class="panel">
+              <div class="panel-heading">
+                <span>Arquivos</span>
+                <h2>Documentos do evento</h2>
+              </div>
+              <div class="document-grid" data-documents></div>
+            </article>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <script src="portal.js"></script>
+  </body>
+</html>
